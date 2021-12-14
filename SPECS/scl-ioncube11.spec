@@ -65,7 +65,7 @@ install -m 755 ioncube_loader_lin_%{php_version}.so $RPM_BUILD_ROOT%{php_extdir}
 # The ini snippet
 install -d -m 755 $RPM_BUILD_ROOT%{php_inidir}
 cat > $RPM_BUILD_ROOT%{php_inidir}/%{inifile} <<EOF
-; Enable v10 IonCube Loader extension module
+; Enable v11 IonCube Loader extension module
 zend_extension="%{php_extdir}/ioncube_loader_lin_%{php_version}.so"
 EOF
 
