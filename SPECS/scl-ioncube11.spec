@@ -15,7 +15,7 @@
 Name:    %{?scl_prefix}php-ioncube11
 Vendor:  cPanel, Inc.
 Summary: v11 Loader for ionCube-encoded PHP files
-Version: 11.0.0
+Version: 11.0.1
 # Doing release_prefix this way for Release allows for OBS-proof versioning, See EA-4572 for more details
 %define release_prefix 1
 Release: %{release_prefix}%{?dist}.cpanel
@@ -79,6 +79,9 @@ EOF
 %{php_extdir}/ioncube_loader_lin_%{php_version}.so
 
 %changelog
+* Fri Apr 15 2022 Cory McIntire <cory@cpanel.net> - 11.0.1-1
+- EA-10640: Update scl-ioncube11 from v11.0.0 to v11.0.1
+
 * Wed Dec 08 2021 Julian Brown <julian.brown@webpros.com> - 11.0.0-1 
 - ZC-9539: First version
 
